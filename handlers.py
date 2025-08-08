@@ -57,3 +57,4 @@ def get_curse(update: Update, context: CallbackContext):
 
 def save(update: Update, context: CallbackContext):
     jobs.save()
+    update.message.reply_text("Данные обновлены")

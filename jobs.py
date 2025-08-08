@@ -1,8 +1,8 @@
 from db import db_session
 
-from fast import names, countries, cities, langs
+from functions import names, countries, cities, langs
 from models import Country, Name, City, Language, CurrencyRate
-from fast import curses
+from functions import curses
 
 
 funcs = {
@@ -30,4 +30,4 @@ def save():  # check -> for -> check + db.query.filter_by.first() -> add
 
 if __name__ == "__main__": 
     save()
-    print("ВСЕ ДОБАВЛЕНО УРАААААААА")
+    print("Все изменения применены.")
